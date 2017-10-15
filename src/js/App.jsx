@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { NavBar } from './NavBar/NavBar.jsx';
+import NavBar from './NavBar/NavBar.jsx';
 
 class App extends React.Component {
   render() {
