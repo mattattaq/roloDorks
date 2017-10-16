@@ -1,4 +1,5 @@
 .rd-navbar
+    display: flex
     padding-top: 10px
     padding-bottom: 10px
     background: #3D2A4C
@@ -9,10 +10,28 @@
     margin: 0
     div ul
         list-style: none
+        margin-bottom: 0
         li
             float: left
-            margin-right: 10px
+            margin-right: 20px
             font-size: 16px
-            &:hover
-                cursor: pointer
-                color: $teal
+            a
+                color: white
+                text-decoration: none
+                &:hover
+                    cursor: pointer
+                    color: $teal
+                    transition: color .5s
+                &.selected
+                    border-bottom: 10px solid white
+                    transition: border-bottom .5s ease-out
+                    padding-bottom: 5px
+
+    .mast
+        font-family: Arial, Helvetica, sans-serif
+        line-height: 12px
+    .mast-accent
+        font-family: $lobster
+.rd-navbar .col-md-12
+    display: flex
+    align-items: center
