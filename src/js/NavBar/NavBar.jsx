@@ -7,7 +7,7 @@ class NavBar extends React.Component {
     return <div>
       <div className="row rd-navbar">
         <div className="col-md-12">
-          <h1 className="mast">Roli<span className="mast-accent">Dorks</span></h1>
+          <h1 className="mast"><em>Roli</em><span className="mast-accent">dorks</span></h1>
           <ul>
             <li><NavLink strict to="/">Home</NavLink></li>
             <li><NavLink strict to="/deck" activeClassName="selected">Deck</NavLink></li>
