@@ -6,12 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf build && webpack",
-<<<<<<< Updated upstream
-    "start": "webpack-dev-server"
-=======
-    "start": "webpack-dev-server",
-    "dev": "webpack-dev-sever --hot --inline",
->>>>>>> Stashed changes
+    "start": "webpack-dev-server --hot --history-api-fallback"
   },
   "keywords": [],
   "author": "",
@@ -31,7 +26,10 @@
     "webpack-dev-server": "^2.9.1"
   },
   "dependencies": {
+    "history": "^1.17.0",
     "react": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^0.14.7",
+    "react-router-dom": "^4.2.2"
   }
 }
