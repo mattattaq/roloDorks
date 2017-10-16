@@ -3,16 +3,14 @@ import React from 'react';
 class Dashboard extends React.Component {
   render() {
     return <div>
-      <div className="row rd-navbar">
-        <div className="col-md-12">
-          <ul>
-            <li>This</li>
-            <li>that</li>
-            <li>the other thing</li>
-            <li>this too</li>
-          </ul>
-        </div>
-      </div>
+      <h1>Dashboard</h1>
+      <h1>Dashboard</h1>
+      <h1>Dashboard</h1>
+      <h1>Dashboard</h1>
+      <h1>Dashboard</h1>
+      <h1>Dashboard</h1>
+      <h1>Dashboard</h1>
+      <h1>Dashboard</h1>
     </div>
   }
  }

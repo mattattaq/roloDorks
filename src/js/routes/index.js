@@ -1,14 +1,24 @@
 import React from 'react';
-import{ BrowserRouter, Route, Switch } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import App from '../App.jsx'
-import { Dashboard } from '../Dashboard/Dashboard.jsx';
+import Dashboard from '../Dashboard/Dashboard.jsx';
+import NavBar from '../NavBar/NavBar.jsx';
+import Card from '../Card/Card.jsx';
+import Deck from '../Deck/Deck.jsx';
 
-export default () => {
-    <BrowserRouter>
-        <Switch>
-            <Route path="/" exact component={ App } />
-            <Route path="/dashboard" exact component={ Dashboard } />
-        </Switch>
-    </BrowserRouter>
-}
+export default React.createClass({
+    render() {
+        return (
+            <Router>
+                <div>
+                    <NavBar />
+                    <Route exact={true} path="/" component={Dashboard} />
+                    <Route path="/dashboard" component={Dashboard} />
+                    <Route path="/card" component={Card} />
+                    <Route path="/deck" component={Deck} />
+                </div>
+            </Router>
+        )
+    }
+})
