@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Dashboard from '../Dashboard/Dashboard.jsx';
 import NavBar from '../NavBar/NavBar.jsx';
@@ -13,10 +13,12 @@ export default React.createClass({
             <Router>
                 <div>
                     <NavBar />
-                    <Route exact={true} path="/" component={Dashboard} />
-                    <Route path="/dashboard" component={Dashboard} />
-                    <Route path="/card" component={Card} />
-                    <Route path="/deck" component={Deck} />
+                    <Switch>
+                        <Route exact={true} path="/" component={Dashboard} />
+                        <Route path="/dashboard" component={Dashboard} />
+                        <Route path="/card" component={Card} />
+                        <Route path="/deck" component={Deck} />
+                    </Switch>
                 </div>
             </Router>
         )
