@@ -1,16 +1,16 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import {render} from 'react-dom';
+
+import Routes from './routes';
 import NavBar from './NavBar/NavBar.jsx';
+import Dashboard from './Dashboard/Dashboard.jsx'
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <NavBar />
-        <h1>App</h1>
-      </div>
-      
-  )}
+      <Routes />
+    );
+  }
 }
 
-ReactDom.render(<App />, document.getElementById('app'));
+render(<App />, window.document.getElementById('app'));
