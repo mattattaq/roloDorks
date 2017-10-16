@@ -10088,11 +10088,15 @@ var NavBar = function (_React$Component) {
             _react2.default.createElement(
               'h1',
               { className: 'mast' },
-              'Roli',
+              _react2.default.createElement(
+                'em',
+                null,
+                'Roli'
+              ),
               _react2.default.createElement(
                 'span',
                 { className: 'mast-accent' },
-                'Dorks'
+                'dorks'
               )
             ),
             _react2.default.createElement(
