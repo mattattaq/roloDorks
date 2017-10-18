@@ -5,13 +5,19 @@ class Card extends React.Component {
   constructor(props) {
     super(props);
     this.state ={
-      data: Data
+      data: Data,
+      websiteArray: Data.user.websites
     }
   }
   render() {
     var firstLetter = Data.user.l_name.charAt(0);
-    console.log(firstLetter);
-    return <div>
+    var websiteOutput = window.document.getElementById("websites");
+    console.log(Data.user.websites[0]);
+    
+    for (var i = 0; i < this.state.websiteArray; i++){
+    websiteOutput.innerHTML += '<a href="' + this.state.websiteArray[i] + '\">'+ this.state.websiteArray[i] + '<br/>';
+    }
+    return <div className="card-page">
       <div className="content">
         <div className="row">
           <div className="col-md-12">
@@ -35,7 +41,32 @@ class Card extends React.Component {
             </div>
             <div className="divider"></div><div className="divider"></div>
             <div className="my-card card-bottom">
-
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="card-wrapper text-center">
+                    <p>Front</p>
+                    <img className={"user-card card-front " + (Data.user.flipped ? 'flipped': '')}
+                      src={Data.user.img_front} />
+                    <p>Back</p>
+                    <img className={"user-card card-back " + (Data.user.flipped ? 'flipped': '')} 
+                      src={Data.user.img_back} />
+                  </div>
+                  
+                </div>
+                <div className="col-md-6">
+                  <div className="user-info">
+                    <h4>Name: <span>{Data.user.f_name} {Data.user.l_name} </span></h4>
+                    <h4>Business: <span>{Data.user.business}</span></h4>
+                    <h4>Websites: <span id="websites"><br/>
+                      {Data.user.websites.map(function(item, i){
+                          return <a href={item}>{item} <br/></a>
+                        })}
+                      </span></h4>
+                    <h4>Tel:</h4>
+                    <h4>Info:</h4>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
