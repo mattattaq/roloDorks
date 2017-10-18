@@ -27,9 +27,9 @@ class Dashboard extends React.Component {
                 
               </div>
             </div>
-            <h4><NavLink to="deck">View More</NavLink></h4>
+            <h4><NavLink to="./deck">View More</NavLink></h4>
           </div>
-          <NavLink to="card" replace><div className="col-md-2 portal">
+          <NavLink to="./card" replace><div className="col-md-2 portal">
             <h2>View my card</h2>
             <p>{Data.user.f_name} {Data.user.l_name}</p>
           </div></NavLink>

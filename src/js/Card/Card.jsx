@@ -12,7 +12,6 @@ class Card extends React.Component {
   render() {
     var firstLetter = Data.user.l_name.charAt(0);
     var websiteOutput = window.document.getElementById("websites");
-    console.log(Data.user.websites[0]);
     
     for (var i = 0; i < this.state.websiteArray; i++){
     websiteOutput.innerHTML += '<a href="' + this.state.websiteArray[i] + '\">'+ this.state.websiteArray[i] + '<br/>';
