@@ -1,9 +1,15 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
-    entry: "./src/js/index.js",
+    entry: [
+        'react-hot-loader/patch',
+        'webpack-dev-server/client?http://localhost:8080',
+        'webpack/hot/only-dev-server',
+        './src/js/index.js'
+    ],
     output: {
         path: path.join(__dirname + '/build'),
         filename: 'bundle.js'
@@ -20,14 +26,30 @@ module.exports = {
                 ]
               },
             {
-                test: /\.sass$/, use: ExtractTextPlugin.extract({fallback: 'style-loader', use: ['css-loader', 'sass-loader']})
+                test: /\.sass$/,
+                use: ['style-loader','css-loader', 'sass-loader']
             }
         ]
+    },
+    devServer: {
+        contentBase: path.join(__dirname, "build"),
+        compress: true,
+        hot: true,
+        // open: true,
+        historyApiFallback: true,
+        publicPath: '/'
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),
-        new ExtractTextPlugin("main.css")
+        new ExtractTextPlugin({
+            filename: "main.css",
+            disable: false,
+            allChunks: true
+        }),
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NamedModulesPlugin()
+
     ]
 }
