@@ -22,7 +22,7 @@ class Card extends React.Component {
               <div className="row">
                 <div className="col-md-4">
                   <h1>Profile</h1>
-                  <p>Choose which card you'd like to view</p>
+                  <p>Below is you card information</p>
                 </div>
                 <div className="col-md-8">
                   <div className="panel panel-default">

@@ -9,7 +9,7 @@ import { Card } from './Card/Card.jsx';
 import { Deck } from './Deck/Deck.jsx';
 const css = require('../sass/main.sass');
 
-import { AppContainer } from 'react-hot-loader'
+import { AppContainer } from 'react-hot-loader';
 
 
 //needed for HMR
