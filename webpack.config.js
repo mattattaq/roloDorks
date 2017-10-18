@@ -4,7 +4,12 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: "./src/js/index.js",
+    entry: [
+        'react-hot-loader/patch',
+        'webpack-dev-server/client?http://localhost:8080',
+        'webpack/hot/only-dev-server',
+        './src/js/index.js'
+    ],
     output: {
         path: path.join(__dirname + '/build'),
         filename: 'bundle.js'
@@ -30,7 +35,9 @@ module.exports = {
         contentBase: path.join(__dirname, "build"),
         compress: true,
         hot: true,
-        open: true
+        // open: true,
+        historyApiFallback: true,
+        publicPath: '/'
     },
     plugins: [
         new HtmlWebpackPlugin({
