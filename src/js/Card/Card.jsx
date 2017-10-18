@@ -15,12 +15,28 @@ class Card extends React.Component {
       <div className="content">
         <div className="row">
           <div className="col-md-12">
-            <div className="my-card-top">
+            <div className="my-card card-top">
               <span className="name-letter">
                 { firstLetter }
               </span>
+              <div className="row">
+                <div className="col-md-4">
+                  <h1>Profile</h1>
+                  <p>Choose which card you'd like to view</p>
+                </div>
+                <div className="col-md-8">
+                  <div className="panel panel-default">
+                    <img src="" alt="" className="img-responsive thumbnail"/>
+                    <p className="text-center">{Data.user.f_name} {Data.user.l_name}</p>
+                  </div>
+                  
+                </div>
+              </div>
             </div>
-            <div className="my-card-bottom"></div>
+            <div className="divider"></div><div className="divider"></div>
+            <div className="my-card card-bottom">
+
+            </div>
           </div>
         </div>
         
