@@ -30057,8 +30057,8 @@ var _default = _react2.default.createClass({
                     null,
                     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/roloDorks', component: _Dashboard2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: '/roloDorks/dashboard', component: _Dashboard2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: 'roloDorks/card', component: _Card2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: 'roloDorks/deck', component: _Deck2.default })
+                    _react2.default.createElement(_reactRouterDom.Route, { path: '/roloDorks/card', component: _Card2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: '/roloDorks/deck', component: _Deck2.default })
                 )
             )
         );
