@@ -31144,7 +31144,7 @@ var _Deck2 = _interopRequireDefault(_Deck);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var history = (0, _history.createBrowserHistory)({ basename: '/' });
+var history = (0, _history.createBrowserHistory)({ basename: '/roloDorks' });
 
 var _default = _react2.default.createClass({
     displayName: '_default',
