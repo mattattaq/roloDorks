@@ -11,32 +11,47 @@ class Dashboard extends React.Component {
   }
   
   render() {
+    var DataArr = Data.cards.slice(0, 3);
     return <div>
       <div className="content">
         <div className="container row">
-          <div className="col-md-10 portal ml5">
+          <div className="col-md-10 portal">
             <h2>View deck</h2>
-            <div className="card container-fluid">
-              <div className="col-md-4">
-              <img src={Data.cards[0].img_front} alt="" className={"img-responsive thumbnail " +  (Data.cards[0].flipped ? 'flipped': '')}/>
-              </div>
-              <div className="col-md-8">
-                <h3>{Data.cards[0].c_name}</h3>
-                <h4>{Data.cards[0].full_name}</h4>
-                <p><a href={Data.cards[0].url}> {Data.cards[0].url} </a></p>
-                
-              </div>
+            <h4><NavLink to="./deck">View More</NavLink></h4>
+              {DataArr.map(function(item, i){
+                return (
+                <div>
+                  <div className="row container-fluid" ontouchstart="this.classList.toggle('hover');">
+                    <div className="card">
+                      <div className="col-md-6">
+                      <div className={"flip-container " + (DataArr[i].flipped ? "flipped": '')} ontouchstart="this.classList.toggle('hover');">
+                          <div className="flipper">
+                            <div className="front">
+                              <img src={DataArr[i].img_front} alt=""/>
+                            </div>
+                            <div className="back">
+                              <img src={DataArr[i].img_back} alt=""/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        that
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+              })}
             </div>
-            <h4><NavLink to="deck">View More</NavLink></h4>
-          </div>
-          <NavLink to="card" replace><div className="col-md-2 portal">
+            <NavLink to="./card" replace><div className="col-md-1 portal">
             <h2>View my card</h2>
             <p>{Data.user.f_name} {Data.user.l_name}</p>
           </div></NavLink>
+          </div>
+          
         </div>
       </div>
-      
-    </div>
   }
  }
 export default Dashboard;

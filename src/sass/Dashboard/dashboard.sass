@@ -1,3 +1,5 @@
+.content .container
+    margin: 0 auto
 .portal
     outline-style: solid
     outline-color: $grey
@@ -6,13 +8,16 @@
     width: 100%
     background-color: $grey
     padding: 5px
+    height: auto
+    min-height: 160px
+    margin-bottom: 10px
+    overflow: auto
     img
         width: 100%
         max-width: 300px
     .flipped
         max-width: 150px
         height: 300px
-
-.ml5
-    width: 82%
-    margin-right: 5px
+    .col-md-6
+        padding-left: 10px
+        border: solid
