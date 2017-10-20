@@ -16,6 +16,7 @@ export default {
           "full_name":"Person McBodyman",
           "url":"http://www.angieslist.com",
           "img_front": "https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
           "flipped": true,
           "met":""
         },
@@ -24,6 +25,7 @@ export default {
           "full_name":"Person McBodyman",
           "url":"http://www.blocksfortacs.com",
           "img_front": "https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
           "flipped": true,
           "met":""
         },
@@ -32,6 +34,7 @@ export default {
           "full_name":"Person McBodyman",
           "url":"http://www.drippytrippy.com",
           "img_front":"https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
           "flipped": false,
           "met":""
         },
@@ -40,6 +43,7 @@ export default {
           "full_name":"Person McBodyman",
           "url":"http://www.plumboutofluck.com",
           "img_front":"https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
           "flipped": true,
           "met":""
         },

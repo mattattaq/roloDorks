@@ -41,16 +41,17 @@ class Card extends React.Component {
             <div className="divider"></div><div className="divider"></div>
             <div className="my-card card-bottom">
               <div className="row">
-                <div className="col-md-6">
-                  <div className="card-wrapper text-center">
-                    <p>Front</p>
-                    <img className={"user-card card-front " + (Data.user.flipped ? 'flipped': '')}
-                      src={Data.user.img_front} />
-                    <p>Back</p>
-                    <img className={"user-card card-back " + (Data.user.flipped ? 'flipped': '')} 
-                      src={Data.user.img_back} />
+                <div className="col-md-6 text-center">
+                  <div className={Data.user.flipped ? 'flip-container flipped': 'flip-container'} >
+                    <div className="flipper">
+                      <div className="front">
+                        <p>front</p>
+                      </div>
+                      <div className="back">
+                        <p>back</p>
+                      </div>
+                    </div>
                   </div>
-                  
                 </div>
                 <div className="col-md-6">
                   <div className="user-info">

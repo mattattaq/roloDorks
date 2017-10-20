@@ -15,9 +15,9 @@ export default React.createClass({
                     <NavBar />
                     <Switch>
                         <Route exact={true} path="/" component={Dashboard} />
-                        <Route path="./dashboard" component={Dashboard} />
-                        <Route path="./card" component={Card} />
-                        <Route path="./deck" component={Deck} />
+                        <Route path="/dashboard" component={Dashboard} />
+                        <Route path="/card" component={Card} />
+                        <Route path="/deck" component={Deck} />
                     </Switch>
                 </div>
             </Router>
