@@ -37,6 +37,9 @@
   display: flex;
   align-items: center; }
 
+.content .container {
+  margin: 0 auto; }
+
 .portal {
   outline-style: solid;
   outline-color: #969696;
@@ -45,20 +48,22 @@
 .card {
   width: 100%;
   background-color: #969696;
-  padding: 5px; }
+  padding: 5px;
+  height: auto;
+  min-height: 160px;
+  margin-bottom: 10px;
+  overflow: auto; }
   .card img {
     width: 100%;
     max-width: 300px; }
   .card .flipped {
     max-width: 150px;
     height: 300px; }
-
-.ml5 {
-  width: 82%;
-  margin-right: 5px; }
+  .card .col-md-6 {
+    padding-left: 10px;
+    border: solid; }
 
 .card-page {
-  max-width: 1267px;
   margin: 0 auto; }
 
 .my-card {
@@ -137,6 +142,48 @@
     font-weight: 300; }
     .user-info h4 a, .user-info h4 a:visited {
       color: #a05a99; }
+
+.flip-container {
+  perspective: 1000px;
+  transform: rotateY(0deg);
+  background-color: #AA9FB1; }
+
+.flip-container:hover .flipper, .flip-container.hover.flipper {
+  transform: rotateY(180deg); }
+
+.flip-container, .front, .back {
+  width: 300px;
+  height: 150px;
+  overflow: hidden; }
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative; }
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.back img {
+  transform: rotateY(180deg);
+  background-color: #7871AA; }
+
+.front {
+  background-color: #4E5283; }
+
+.flipped, .flipped img {
+  width: 150px;
+  height: 300px;
+  max-height: 300px;
+  max-width: 150px; }
+  .flipped .front, .flipped .back, .flipped .front img, .flipped .back img, .flipped img .front, .flipped img .back, .flipped img .front img, .flipped img .back img {
+    width: 150px;
+    height: 300px;
+    max-width: 150px;
+    max-height: 300px; }
 
 html, body {
   width: 100%;
