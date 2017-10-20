@@ -1,5 +1,4 @@
 .card-page
-    max-width: 1267px
     margin: 0 auto
 .my-card
     width: 100%
@@ -71,3 +70,38 @@
         font-weight: 300
         a, a:visited
             color: $pink
+.flip-container
+    perspective: 1000px
+    transform: rotateY(0deg)
+    background-color: #AA9FB1
+.flip-container:hover .flipper, .flip-container.hover.flipper
+    transform: rotateY(180deg)
+.flip-container, .front, .back 
+    width: 300px
+    height: 150px
+    overflow: hidden
+.flipper
+    transition: 0.6s
+    transform-style: preserve-3d
+    position: relative
+.front, .back
+    backface-visibility: hidden
+    position: absolute
+    top: 0
+    left: 0
+.back img
+    transform: rotateY(180deg)
+    background-color: #7871AA
+.front
+    background-color: #4E5283
+.flipped, .flipped img
+    width: 150px
+    height: 300px
+    max-height: 300px
+    max-width: 150px
+    .front, .back, .front img, .back img
+        width: 150px
+        height: 300px
+        max-width: 150px
+        max-height: 300px
+        
