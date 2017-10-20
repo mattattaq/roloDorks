@@ -10156,7 +10156,7 @@ var Dashboard = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   _reactRouterDom.NavLink,
-                  { to: './deck' },
+                  { to: 'roloDorks/deck' },
                   'View More'
                 )
               ),
@@ -10204,7 +10204,7 @@ var Dashboard = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactRouterDom.NavLink,
-              { to: './card', replace: true },
+              { to: 'roloDorks/card', replace: true },
               _react2.default.createElement(
                 'div',
                 { className: 'col-md-1 portal' },
@@ -10321,7 +10321,7 @@ var NavBar = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   _reactRouterDom.NavLink,
-                  { strict: true, to: '/' },
+                  { strict: true, to: '/roloDorks' },
                   'Home'
                 )
               ),
@@ -10330,7 +10330,7 @@ var NavBar = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   _reactRouterDom.NavLink,
-                  { strict: true, to: '/deck', activeClassName: 'selected' },
+                  { strict: true, to: '/roloDorks/deck', activeClassName: 'selected' },
                   'Deck'
                 )
               ),
@@ -10339,7 +10339,7 @@ var NavBar = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   _reactRouterDom.NavLink,
-                  { exact: true, to: '/card', activeClassName: 'selected' },
+                  { exact: true, to: '/roloDorks/card', activeClassName: 'selected' },
                   'My Card'
                 )
               )
@@ -30055,10 +30055,10 @@ var _default = _react2.default.createClass({
                 _react2.default.createElement(
                     _reactRouterDom.Switch,
                     null,
-                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Dashboard2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: '/dashboard', component: _Dashboard2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: '/card', component: _Card2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: '/deck', component: _Deck2.default })
+                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/roloDorks', component: _Dashboard2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: '/roloDorks/dashboard', component: _Dashboard2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: 'roloDorks/card', component: _Card2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: 'roloDorks/deck', component: _Deck2.default })
                 )
             )
         );
