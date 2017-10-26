@@ -45,10 +45,10 @@ class Card extends React.Component {
                   <div className={Data.user.flipped ? 'flip-container flipped': 'flip-container'} >
                     <div className="flipper">
                       <div className="front">
-                        <p>front</p>
+                        <img src={Data.user.img_front} alt="Image front" />
                       </div>
                       <div className="back">
-                        <p>back</p>
+                      <img src={Data.user.img_back} alt="Image back" />
                       </div>
                     </div>
                   </div>
@@ -64,6 +64,8 @@ class Card extends React.Component {
                       </span></h4>
                     <h4>Tel:</h4>
                     <h4>Info:</h4>
+                    <a href={Data.user.img_front} target="_blank">Front</a> <br/>
+                    <a href={Data.user.img_back} target="_blank">Back</a>
                   </div>
                 </div>
               </div>
