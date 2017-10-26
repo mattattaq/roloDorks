@@ -44,7 +44,7 @@ export default {
           "url":"http://www.muthaoithcreations.com",
           "img_front":"https://i.imgur.com/A81bEb2.jpg",
           "img_back": "",
-          "flipped": true,
+          "flipped": false,
           "met":""
         },
         {
@@ -54,7 +54,7 @@ export default {
           "img_front":"https://i.imgur.com/E4mJzeo.jpg",
           "img_back": "https://i.imgur.com/ONWOGiK.jpg",
           "flipped": true,
-          "met":"Indy ComicCon 2015"
+          "met":"Indiana Comic Con 2015"
         },
         {
           "c_name":"Beyond Clay Gauges",
@@ -72,7 +72,7 @@ export default {
           "img_front":"https://i.imgur.com/fFgS2le.jpg",
           "img_back": "https://i.imgur.com/qadZgVH.jpg",
           "flipped": false,
-          "met":"Indy ComicCon 2015"
+          "met":"Indiana Comic Con 2015"
         },
         {
           "c_name":"Bee Draws Stuff",
@@ -144,7 +144,7 @@ export default {
           "img_front":"https://i.imgur.com/lguOszR.jpg",
           "img_back": "https://i.imgur.com/4lXDQLo.jpg",
           "flipped": false,
-          "met":"Indy ComicCon 2015"
+          "met":"Indiana Comic Con 2015"
         },
         {
           "c_name":"Deejay Metrognome",
@@ -375,8 +375,8 @@ export default {
           "c_name":"Electric Tattooing",
           "full_name":"Michael Childers",
           "url":"",
-          "img_front":"https://picsum.photos/400",
-          "img_back": "https://picsum.photos/400",
+          "img_front":"https://i.imgur.com/RrblQKf.jpg",
+          "img_back": "",
           "flipped": true,
           "met":""
         },
@@ -401,84 +401,101 @@ export default {
         {
           "c_name":"Caricatures by Paul McCall",
           "full_name":"Person McBodyman",
+          "url":"http://www.paulmccall.com",
+          "img_front":"https://i.imgur.com/hxDpykB.jpg",
+          "img_back": "",
+          "flipped": false,
+          "met":"INDYpendent Self-Publisher's Show"
+        },
+        {
+          "c_name":"Downtown Comics",
+          "full_name":"Pete Kilmer",
           "url":"http://www.plumboutofluck.com",
-          "img_front":"https://picsum.photos/400",
-          "img_back": "https://picsum.photos/400",
+          "img_front":"https://i.imgur.com/os520S8.jpg",
+          "img_back": "https://i.imgur.com/uSWAeCk.jpg",
+          "flipped": false,
+          "met":"Downtown Comics castleton"
+        },
+        {
+          "c_name":"Raven Designs",
+          "full_name":"Beth Moak",
+          "url":"http://www.ravendesigns.org",
+          "img_front":"https://i.imgur.com/gV1jq1J.jpg?1",
+          "img_back": "https://i.imgur.com/QBhwKbC.jpg?1",
           "flipped": true,
           "met":""
         },
         {
-          "c_name":"Plumb Luck",
-          "full_name":"Person McBodyman",
-          "url":"http://www.plumboutofluck.com",
-          "img_front":"https://picsum.photos/400",
-          "img_back": "https://picsum.photos/400",
-          "flipped": true,
+          "c_name":"Loading Law",
+          "full_name":"Ross A. Hersemann",
+          "url":"",
+          "img_front":"https://i.imgur.com/PFNMWdf.jpg",
+          "img_back": "",
+          "flipped": false,
           "met":""
         },
         {
-          "c_name":"Plumb Luck",
-          "full_name":"Person McBodyman",
-          "url":"http://www.plumboutofluck.com",
-          "img_front":"https://picsum.photos/400",
-          "img_back": "https://picsum.photos/400",
+          "c_name":"Sean Dempsey Illustrator",
+          "full_name":"Sean Dempsey",
+          "url":"http://www.smdempseycomics.com",
+          "img_front":"https://i.imgur.com/Yjw8k53.jpg",
+          "img_back": "https://i.imgur.com/sfkfIYD.jpg",
+          "flipped": false,
+          "met":"Indy Comic Con"
+        },
+        {
+          "c_name":"Seth Quillen Did This",
+          "full_name":"Seth Quillen",
+          "url":"http://www.sethdidthis.tumblr.com",
+          "img_front":"https://i.imgur.com/0iDXpTd.jpg",
+          "img_back": "https://i.imgur.com/uosgudS.jpg",
+          "flipped": false,
+          "met":"IUPUI"
+        },
+        {
+          "c_name":"Steve Bryant",
+          "full_name":"Steve Bryant",
+          "url":"http://www.SteveBryant.daportfolio.com",
+          "img_front":"https://i.imgur.com/5z1jgqx.jpg",
+          "img_back": "",
           "flipped": true,
+          "met":"Indiana Comic Con"
+        },
+        {
+          "c_name":"Comics Codpast",
+          "full_name":"Jay & Zac",
+          "url":"http://www.SubjectivelySpeakingProductions.com",
+          "img_front":"https://i.imgur.com/EkZOECO.jpg",
+          "img_back": "https://i.imgur.com/1AKyddR.jpg",
+          "flipped": false,
+          "met":"INDYpendent Self-Publisher's Show"
+        },
+        {
+          "c_name":"Timid Monsters",
+          "full_name":"",
+          "url":"http://www.TimidMOnsters.com",
+          "img_front":"https://i.imgur.com/X6Bfz32.jpg",
+          "img_back": "",
+          "flipped": true,
+          "met":"INDYpendent Self-Publisher's Show"
+        },
+        {
+          "c_name":"Trent Fairbrother Artist",
+          "full_name":"Trent Fairbrother",
+          "url":"http://www.HelloMyNameisX.webs.com",
+          "img_front":"https://i.imgur.com/QZ55Az0.jpg?1",
+          "img_back": "https://i.imgur.com/WkXBEbx.jpg?1",
+          "flipped": false,
           "met":""
         },
         {
-          "c_name":"Plumb Luck",
-          "full_name":"Person McBodyman",
-          "url":"http://www.plumboutofluck.com",
-          "img_front":"https://picsum.photos/400",
-          "img_back": "https://picsum.photos/400",
-          "flipped": true,
+          "c_name":"UnCONventional Comic",
+          "full_name":"",
+          "url":"http://www.unconventional-comic.com",
+          "img_front":"https://i.imgur.com/shkl0vn.jpg",
+          "img_back": "",
+          "flipped": false,
           "met":""
-        },
-        {
-          "c_name":"Plumb Luck",
-          "full_name":"Person McBodyman",
-          "url":"http://www.plumboutofluck.com",
-          "img_front":"https://picsum.photos/400",
-          "img_back": "https://picsum.photos/400",
-          "flipped": true,
-          "met":""
-        },
-        {
-          "c_name":"Plumb Luck",
-          "full_name":"Person McBodyman",
-          "url":"http://www.plumboutofluck.com",
-          "img_front":"https://picsum.photos/400",
-          "img_back": "https://picsum.photos/400",
-          "flipped": true,
-          "met":""
-        },
-        {
-          "c_name":"Plumb Luck",
-          "full_name":"Person McBodyman",
-          "url":"http://www.plumboutofluck.com",
-          "img_front":"https://picsum.photos/400",
-          "img_back": "https://picsum.photos/400",
-          "flipped": true,
-          "met":""
-        },
-        {
-          "c_name":"Plumb Luck",
-          "full_name":"Person McBodyman",
-          "url":"http://www.plumboutofluck.com",
-          "img_front":"https://picsum.photos/400",
-          "img_back": "https://picsum.photos/400",
-          "flipped": true,
-          "met":""
-        },
-        {
-          "c_name":"Plumb Luck",
-          "full_name":"Person McBodyman",
-          "url":"http://www.plumboutofluck.com",
-          "img_front":"https://picsum.photos/400",
-          "img_back": "https://picsum.photos/400",
-          "flipped": true,
-          "met":""
-        },
-
+        }
       ]
 }
