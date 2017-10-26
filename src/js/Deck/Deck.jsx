@@ -24,7 +24,7 @@ class Deck extends React.Component {
                               <img src={Data.cards[i].img_front} alt=""/>
                             </div>
                             <div className="back">
-                              <img src={Data.cards[i].img_back} alt=""/>
+                              <img src={(Data.cards[i].img_back == "") ? Data.cards[i].img_front : Data.cards[i].img_back} alt=""/>
                             </div>
                           </div>
                         </div>
@@ -35,7 +35,8 @@ class Deck extends React.Component {
                           <h4>{Data.cards[i].full_name}</h4>
                           <p><a href={Data.cards[i].url}> {Data.cards[i].url} </a></p>
                           <h4>Met @: {Data.cards[i].met}</h4>
-                          <h4><a href={Data.cards[i].img_front} target="_new"> Front</a> <a href={Data.cards[i].img_back} target="_new"> Back</a></h4>
+                          <h4><a href={Data.cards[i].img_front} target="_new"> Front</a> <a href={(Data.cards[i].img_back == "") ? 
+                          Data.cards[i].img_front : Data.cards[i].img_back} target="_new"> Back</a></h4>
                         </div>
                       </div>
                     </div>
