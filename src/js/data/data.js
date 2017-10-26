@@ -214,7 +214,7 @@ export default {
           "full_name":"",
           "url":"",
           "img_front":"https://i.imgur.com/i8km4MP.jpg",
-          "img_back": "",
+          "img_back": "https://i.imgur.com/93DGtl8.jpg",
           "flipped": false,
           "met":"GenCon"
         },
@@ -327,6 +327,96 @@ export default {
           "met":""
         },
         {
+          "c_name":"Lee Bradford Artist",
+          "full_name":"Lee Bradford",
+          "url":"http://www.cannibalcoalition.com",
+          "img_front":"https://i.imgur.com/3uU6PIa.jpg",
+          "img_back": "",
+          "flipped": true,
+          "met":""
+        },
+        {
+          "c_name":"Liana Buszka Illustrator",
+          "full_name":"Liana Buszka",
+          "url":"http://www.lianabuszka.com",
+          "img_front":"https://i.imgur.com/TV1hlqT.jpg",
+          "img_back": "https://i.imgur.com/1GeDCty.jpg",
+          "flipped": false,
+          "met":""
+        },
+        {
+          "c_name":"The Nerd's Domain",
+          "full_name":"Matthew Quiett",
+          "url":"http://www.facebook.com/nerdsdomain",
+          "img_front":"https://i.imgur.com/OXEoxGl.jpg",
+          "img_back": "https://i.imgur.com/OXEoxGl.jpg",
+          "flipped": false,
+          "met":""
+        },
+        {
+          "c_name":"The Matt Vincent",
+          "full_name":"Matt Vincent",
+          "url":"http://www.themattvincent.com",
+          "img_front":"https://i.imgur.com/Yp9fnmu.jpg",
+          "img_back": "",
+          "flipped": false,
+          "met":""
+        },
+        {
+          "c_name":"Max Siegal Incorporated",
+          "full_name":"Christy Gormal",
+          "url":"http://www.maxsiegalinc.com",
+          "img_front":"https://i.imgur.com/4qGUSqO.jpg",
+          "img_back": "https://i.imgur.com/0orEw84.jpg",
+          "flipped": true,
+          "met":""
+        },
+        {
+          "c_name":"Electric Tattooing",
+          "full_name":"Michael Childers",
+          "url":"",
+          "img_front":"https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
+          "flipped": true,
+          "met":""
+        },
+        {
+          "c_name":"Chainmail Legion",
+          "full_name":"Natalie Butler",
+          "url":"http://www.etsy.com/shop/ChainmailLegion",
+          "img_front":"https://i.imgur.com/Xa91iq3.jpg",
+          "img_back": "https://i.imgur.com/K5tlonB.jpg",
+          "flipped": false,
+          "met":"Renfaire 2017"
+        },
+        {
+          "c_name":"Niko Illustration",
+          "full_name":"Niko",
+          "url":"http://www.Nikodraws.com",
+          "img_front":"https://i.imgur.com/16kcV1V.jpg",
+          "img_back": "https://i.imgur.com/JTopWRR.jpg",
+          "flipped": true,
+          "met":""
+        },
+        {
+          "c_name":"Caricatures by Paul McCall",
+          "full_name":"Person McBodyman",
+          "url":"http://www.plumboutofluck.com",
+          "img_front":"https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
+          "flipped": true,
+          "met":""
+        },
+        {
+          "c_name":"Plumb Luck",
+          "full_name":"Person McBodyman",
+          "url":"http://www.plumboutofluck.com",
+          "img_front":"https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
+          "flipped": true,
+          "met":""
+        },
+        {
           "c_name":"Plumb Luck",
           "full_name":"Person McBodyman",
           "url":"http://www.plumboutofluck.com",
@@ -353,5 +443,42 @@ export default {
           "flipped": true,
           "met":""
         },
-    ]
+        {
+          "c_name":"Plumb Luck",
+          "full_name":"Person McBodyman",
+          "url":"http://www.plumboutofluck.com",
+          "img_front":"https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
+          "flipped": true,
+          "met":""
+        },
+        {
+          "c_name":"Plumb Luck",
+          "full_name":"Person McBodyman",
+          "url":"http://www.plumboutofluck.com",
+          "img_front":"https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
+          "flipped": true,
+          "met":""
+        },
+        {
+          "c_name":"Plumb Luck",
+          "full_name":"Person McBodyman",
+          "url":"http://www.plumboutofluck.com",
+          "img_front":"https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
+          "flipped": true,
+          "met":""
+        },
+        {
+          "c_name":"Plumb Luck",
+          "full_name":"Person McBodyman",
+          "url":"http://www.plumboutofluck.com",
+          "img_front":"https://picsum.photos/400",
+          "img_back": "https://picsum.photos/400",
+          "flipped": true,
+          "met":""
+        },
+
+      ]
 }
