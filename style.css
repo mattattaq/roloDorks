@@ -41,7 +41,6 @@
   margin: 0 auto; }
 
 .portal {
-  outline-style: solid;
   outline-color: #969696;
   outline-width: 1px; }
 
@@ -60,8 +59,7 @@
     max-width: 150px;
     height: 300px; }
   .card .col-md-6 {
-    padding-left: 10px;
-    border: solid; }
+    padding-left: 10px; }
 
 .card-page {
   margin: 0 auto; }
@@ -119,7 +117,6 @@
     height: 320px;
     background-position: center;
     background-image-size: 100%;
-    background-image: url("https://picsum.photos/400");
     margin-bottom: 10px;
     margin-top: 25px; }
 
@@ -169,10 +166,11 @@
 
 .back img {
   transform: rotateY(180deg);
-  background-color: #7871AA; }
+  background-color: #3d2a4c; }
 
 .front {
-  background-color: #4E5283; }
+  background-color: #4E5283;
+  z-index: 1; }
 
 .flipped, .flipped img {
   width: 150px;
