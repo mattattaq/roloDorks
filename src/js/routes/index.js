@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Dashboard from '../Dashboard/Dashboard.jsx';
 import NavBar from '../NavBar/NavBar.jsx';
