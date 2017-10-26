@@ -21058,7 +21058,7 @@ var Deck = function (_React$Component) {
                           _react2.default.createElement(
                             'div',
                             { className: 'back' },
-                            _react2.default.createElement('img', { src: _data2.default.cards[i].img_back, alt: '' })
+                            _react2.default.createElement('img', { src: _data2.default.cards[i].img_back == "" ? _data2.default.cards[i].img_front : _data2.default.cards[i].img_back, alt: '' })
                           )
                         )
                       )
@@ -21107,7 +21107,7 @@ var Deck = function (_React$Component) {
                           ' ',
                           _react2.default.createElement(
                             'a',
-                            { href: _data2.default.cards[i].img_back, target: '_new' },
+                            { href: _data2.default.cards[i].img_back == "" ? _data2.default.cards[i].img_front : _data2.default.cards[i].img_back, target: '_new' },
                             ' Back'
                           )
                         )
